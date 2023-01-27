@@ -1,3 +1,6 @@
+Below is the code for selecting a team color and a team. Notice: Only two teams may be given to the function.
+
+```
 selectTeam(teamOneScore, teamTwoScore, teamOne, teamTwo, teamOneName, teamTwoName) {
         let team = ""
         if (teamOneScore < teamTwoScore) {
@@ -23,3 +26,4 @@ selectTeam(teamOneScore, teamTwoScore, teamOne, teamTwo, teamOneName, teamTwoNam
 
      return team
 }
+```
