@@ -1,4 +1,4 @@
-Below is the code for selecting a team color and a team. Notice: Only two teams may be given to the function.
+### Below are a couple of examples that choose a team out of different amount of teams. Notice: You will need a team name for each team
 
 ```
 selectTeam(teamOneScore, teamTwoScore, teamOne, teamTwo, teamOneName, teamTwoName) {
