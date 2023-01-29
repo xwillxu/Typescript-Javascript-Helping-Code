@@ -30,10 +30,10 @@ selectTeam(teamOneScore, teamTwoScore, teamOne, teamTwo, teamOneName, teamTwoNam
 }
 ```
 
-Below is the example for picking a team out of three teams
+Below is the example for picking a team out of a given number of teams.
 
 ```
-selectTeam(teamOneScore, teamTwoScore, teamOne, teamTwo, teamOneName, teamTwoName) {
+selectTeam(amountOfTeams) {
         let team = ""
         if (teamOneScore < teamTwoScore) {
             team = teamOneName
