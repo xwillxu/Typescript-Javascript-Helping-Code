@@ -33,5 +33,20 @@ selectTeam(teamOneScore, teamTwoScore, teamOne, teamTwo, teamOneName, teamTwoNam
 Below is the example for picking a team out of a given number of teams.
 
 ```
+selectTeam(amountOfTeams, teamObjects) {
+        let newTeamName = ""
+        const teams = []
+        for (let x = 0; x < amountOfTeams; x++) {
+            const team = {
+                teamName: null,
+                teamScore: null,
+                teamPlayerAmount: 0,
+            }
 
+            team.teamName = teamObjects[x].name
+            team.teamScore = teamObjects[x].score
+            team.teamPlayerAmount = teamObjects[x].team.players
+
+            teams.push(team)
+        }
 ```
