@@ -64,5 +64,30 @@ selectTeam(amountOfTeams, teamObjects) {
                 equalScoreTeams.push(team)
             }
         }
+        
+        let leastPlayers = 21
+        const equalAmountPlayersTeams = []
+
+        if (equalScoreTeams.length > 1) {
+            for (const team of equalScoreTeams) {
+                if (leastPlayers > team.teamPlayerAmount) {
+                    leastPlayers = team.teamPlayerAmount
+                    newTeamName = team.teamName
+                }
+
+                if (leastPlayers == team.teamPlayerAmount) {
+                    equalAmountPlayersTeams.push(team)
+                }
+
+            }
+        }
+
+        if (equalAmountPlayersTeams.length > 1) {
+            newTeamName = equalAmountPlayersTeams[random(0, equalAmountPlayersTeams.length - 1)].teamName
+        }
+
+
+        return newTeamName
+    }
 
 ```
