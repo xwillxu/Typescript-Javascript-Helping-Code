@@ -49,4 +49,20 @@ selectTeam(amountOfTeams, teamObjects) {
 
             teams.push(team)
         }
+        
+        
+        let lowestScore = 0
+        const equalScoreTeams = []
+
+        for (const team of teams) {
+            if (lowestScore > team.score) {
+                lowestScore = team.score
+                newTeamName = team.teamName
+            }
+
+            if (lowestScore == team.score) {
+                equalScoreTeams.push(team)
+            }
+        }
+
 ```
