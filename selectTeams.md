@@ -91,3 +91,25 @@ selectTeam(amountOfTeams, teamObjects) {
     }
 
 ```
+
+Example code is below:
+```
+const blueTeam = this.teams.blue
+        const redTeam = this.teams.red
+        const blueTeamScore = blueTeam.score + (blueTeam.kills * 10)
+        const redTeamScore = redTeam.score + (redTeam.kills * 10)
+
+        const team = this.selectTeam(2, [
+            {
+                name: "blue",
+                score: blueTeamScore,
+                team: blueTeam
+            },
+
+            {
+                name: "red",
+                score: redTeamScore,
+                team: redTeam
+            }
+        ])
+```
